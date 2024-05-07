@@ -1,0 +1,14 @@
+AIzaSyA1w4pnUOSkmg1w7wR76xWon8hnE9VvRj0
+
+groq api key = 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
+
+# conda create -p venv python==3.9 -y  
+# conda activate venv/
+# pip install -r requirements.txt
+
+#download embedding model
+def download_hugging_face_embeddings():
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    return embeddings 
+
+embeddings = download_hugging_face_embeddings()
